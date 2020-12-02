@@ -8,8 +8,8 @@ Assim que é consumido pelo serviço da fila (status:read) ele envia o produto p
 algumas informações são printadas no log, como o payload da chamada, status, id e total de mensagens salvas no BD.
 
 ## Instruções
-Baixar os projetos
-com docker instalado: vá até a pasta do projeto Eval e rode via command-line o comando _docker-compose up_ 
+- Baixar os projetos
+- com docker instalado: vá até a pasta do projeto Eval e rode via command-line o comando _docker-compose up_ 
 esse comando irá subir os containers dos serviços MongoDB e RabbitMQ
 
 ### API
@@ -18,11 +18,12 @@ vá até a pasta do projeto mock(api) rodar o comando _mvn clean install_ para i
 e após rodar o commando _mvn spring-boot:run_ para subir a aplicação 
 (ou pode ser rodado dentro da IDE)
 
-para consultar a api mock: http://localhost:8081
-POST /products - Insere ou Atualiza o produto passado no body
-GET /products - retorna todos os produtos cadastrados
-GET /products/{id} - retorna o produto com id informado
-DELETE /products/{id} - deleta o produto com id informado
+### consultar a api mock
+http://localhost:8081
+- POST /products - Insere ou Atualiza o produto passado no body
+- GET /products - retorna todos os produtos cadastrados
+- GET /products/{id} - retorna o produto com id informado
+- DELETE /products/{id} - deleta o produto com id informado
 
 ### Integração
 após ja ter subido os containers, em outra linha de comando
