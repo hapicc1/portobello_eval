@@ -18,6 +18,12 @@ vá até a pasta do projeto mock(api) rodar o comando _mvn clean install_ para i
 e após rodar o commando _mvn spring-boot:run_ para subir a aplicação 
 (ou pode ser rodado dentro da IDE)
 
+para consultar a api mock: http://localhost:8081
+POST /products - Insere ou Atualiza o produto passado no body
+GET /products - retorna todos os produtos cadastrados
+GET /products/{id} - retorna o produto com id informado
+DELETE /products/{id} - deleta o produto com id informado
+
 ### Integração
 após ja ter subido os containers, em outra linha de comando
 vá até a pasta do projeto eval(integracoes) rodar o comando _mvn clean install_ para instalar as dependencias
