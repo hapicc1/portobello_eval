@@ -13,9 +13,14 @@ public class Request {
         headers.add(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
         headers.add("Content-type", "application/json");
 
+        ResponseEntity<String> exchange;
         HttpEntity<String> entity = new HttpEntity<>(body, headers);
 
-        final ResponseEntity<String> exchange = restTemplate.exchange(endpoint, method, entity, String.class);
+        try {
+            exchange = restTemplate.exchange(endpoint, method, entity, String.class);
+        }catch (Exception e){
+            return null;
+        }
         return exchange.getBody();
     }
 }
