@@ -9,8 +9,8 @@ algumas informações são printadas no log, como o payload da chamada, status, 
 
 ## Instruções
 - Baixar os projetos
-- com docker instalado: vá até a pasta do projeto Eval via linha de comando
-- rodar via command-line o comando _docker-compose up_ 
+- com docker instalado: vá até a pasta do projeto Eval via linha de comando (cd protobello_eval/eval)
+- rodar comando _docker-compose up_ 
 esse comando irá subir os containers dos serviços MongoDB e RabbitMQ
 
 ### API
