@@ -1,6 +1,8 @@
 # portobello
-- Projeto 1 - Eval (Camada de integração)
-- Projeto 2 - Mock (API de Produto)
+- Projeto 1 - Eval (Camada de integração) - Java springboot
+- Projeto 2 - Mock (API de Produto) - Java springboot
+- MongoDB - banco de dados Nosql
+- RabbitMQ - Mensageria
 
 O serviço Eval Integração está resposável por fazer um GET na API aberta do mercado livre buscando por um produto especifico,
 fará esse consulta a cada um minuto e colocará na fila para ser consumido (status:sent) e cadastra mensagem no banco.
