@@ -9,12 +9,12 @@ algumas informações são printadas no log, como o payload da chamada, status, 
 
 ## Instruções
 - Baixar os projetos
-- com docker instalado: vá até a pasta do projeto Eval
+- com docker instalado: vá até a pasta do projeto Eval via linha de comando
 - rodar via command-line o comando _docker-compose up_ 
 esse comando irá subir os containers dos serviços MongoDB e RabbitMQ
 
 ### API
-após ja ter subido os containers, em outra linha de comando
+após ja ter subido os containers, em outra linha de comando:
 - vá até a pasta do projeto mock(api) 
 - rodar o comando _mvn clean install_ para instalar as dependencias
 - rodar o commando _mvn spring-boot:run_ para subir a aplicação 
@@ -28,7 +28,7 @@ http://localhost:8081
 - DELETE /products/{id} - deleta o produto com id informado
 
 ### Integração
-após ja ter subido os containers, em outra linha de comando
+após ja ter subido os containers e a api, em outra linha de comando:
 - vá até a pasta do projeto eval(integracoes) 
 - rodar o comando _mvn clean install_ para instalar as dependencias
 - rodar o commando _mvn spring-boot:run_ para subir a aplicação 
